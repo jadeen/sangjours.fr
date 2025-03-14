@@ -71,7 +71,7 @@
     const initDate = new Date("2025-02-18");
     const currentDate = new Date();
     let interval;
-    let count = 0;
+    let count = 100;
     let darkMode = false;
 
     const diff = currentDate - initDate;
@@ -90,7 +90,7 @@
                 return;
             }
             document.querySelector('button').textContent = `${count}`;
-            count += 1;
+            count -= 1;
         }, 100);
     };
 
